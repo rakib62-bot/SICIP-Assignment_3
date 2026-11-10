@@ -77,7 +77,7 @@ Metrics      Metrics
 | Fine-tuned (lr=2e-5) | 0.9178 | 0.5495 | 0.9213 | 0.5630 |
 | **Best Tuned (lr=2e-5, bs=32)** | **0.9291** | **0.6159** | **0.9287** | **0.5597** |
 
-![Comparison Chart](comparison_chart.png)
+![Model comparison](comparison_chart.png)
 
 ### Frozen Baseline (Transfer Learning)
 
@@ -120,7 +120,7 @@ Each combination trains a fresh model for 3 epochs. The best configuration is se
 
 ### Confusion Matrices
 
-![Confusion Matrices](confusion_matrices.png)
+![Confusion matrices](confusion_matrices.png)
 
 ## Real-World Text Test
 
@@ -160,7 +160,7 @@ LIME was applied to 4 predictions (2 toxic, 2 not toxic):
 - Top words toward Not Toxic: "conclusion" (-0.0011), "author" (-0.0007), "respectfully" (-0.0006)
 - Local surrogate R²: 0.650 — the model learned that polite framing matters
 
-![LIME Explanation](lime_explanation.png)
+![LIME explanation](lime_explanation.png)
 
 The LIME analysis confirms that the model is using semantically meaningful features (insult words, polite markers, threatening language) rather than superficial shortcuts.
 
