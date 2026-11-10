@@ -1,7 +1,7 @@
 # Assignment 03: Toxicity Classifier with Transfer Learning, Fine-Tuning, Hyperparameter Tuning, and Interpretability
 
 **Student Name:** Rakib Hasan
-**Student ID:** 00000000
+**Student ID:** 1000129213
 
 BRAC University, SICIP Batch 2
 
@@ -77,7 +77,7 @@ Metrics      Metrics
 | Fine-tuned (lr=2e-5) | 0.9178 | 0.5495 | 0.9213 | 0.5630 |
 | **Best Tuned (lr=2e-5, bs=32)** | **0.9291** | **0.6159** | **0.9287** | **0.5597** |
 
-![Model comparison](comparison_chart.png)
+![Model comparison](comparison_chart.PNG)
 
 ### Frozen Baseline (Transfer Learning)
 
@@ -120,7 +120,7 @@ Each combination trains a fresh model for 3 epochs. The best configuration is se
 
 ### Confusion Matrices
 
-![Confusion matrices](confusion_matrices.png)
+![Confusion matrices](confusion_matrices.PNG)
 
 ## Real-World Text Test
 
@@ -160,7 +160,7 @@ LIME was applied to 4 predictions (2 toxic, 2 not toxic):
 - Top words toward Not Toxic: "conclusion" (-0.0011), "author" (-0.0007), "respectfully" (-0.0006)
 - Local surrogate R²: 0.650 — the model learned that polite framing matters
 
-![LIME explanation](lime_explanation.png)
+![LIME explanation](lime_explanation.PNG)
 
 The LIME analysis confirms that the model is using semantically meaningful features (insult words, polite markers, threatening language) rather than superficial shortcuts.
 
